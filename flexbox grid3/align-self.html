@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #main {
+      width: 220px;
+      height: 300px;
+      border: 1px solid black;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    #main div {
+      flex: 1;
+    }
+
+    #myBlueDiv {
+      align-self: end;
+    }
+  </style>
+</head>
+<body>
+<h1>align-self ---> css cho thành phần con trong thành phần đã được dàn display:flex</h1>
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div>
+
+</body>
+</html>

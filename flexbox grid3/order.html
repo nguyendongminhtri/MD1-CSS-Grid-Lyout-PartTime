@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main {
+            width: 400px;
+            height: 150px;
+            border: 1px solid #c3c3c3;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+        }
+
+        #main div {
+            width: 70px;
+            height: 70px;
+        }
+
+        /*!* Safari 6.1+ *!*/
+        /*div#myRedDIV   {-webkit-order: 4;}*/
+        /*div#myBlueDIV  {-webkit-order: 1;}*/
+        /*div#myGreenDIV {-webkit-order: 3;}*/
+        /*div#myPinkDIV  {-webkit-order: 1;}*/
+
+        /* Standard syntax */
+        div#myBlueDIV  {order: 0;}
+        div#myRedDIV   {order: 1;}
+        div#myGreenDIV {order: 2;}
+        div#myPinkDIV  {order: 3;}
+    </style>
+</head>
+<body>
+<h1>order ---> sắp xếp các vùng theo dạng mảng vị trí các phần tử trong mảng</h1>
+<div id="main">
+    <div style="background-color:coral;" id="myRedDIV">1</div>
+    <div style="background-color:lightblue;" id="myBlueDIV">2</div>
+    <div style="background-color:lightgreen;" id="myGreenDIV">3</div>
+    <div style="background-color:pink;" id="myPinkDIV">4</div>
+</div>
+</body>
+</html>
